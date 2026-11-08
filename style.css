@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Background */
+body {
+    font-family: Georgia, serif;
+    background: #fff0dc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main Container */
+.container {
+    background: #fffaf0;
+    width: 100%;
+    max-width: 780px;
+    padding: 40px;
+    border-radius: 28px;
+    border: 1px solid #e8c9a9;
+    box-shadow: 0 12px 35px rgba(90, 25, 35, 0.18);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #79001f;
+    font-size: 48px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #781c32;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 23px;
+}
+
+/* Labels */
+label {
+    display: block;
+    color: #70152b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+/* Input Fields */
+input,
+textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #dfc0a3;
+    border-radius: 12px;
+    outline: none;
+    background: #fffdf8;
+    color: #4b2630;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+    border-color: #800020;
+    box-shadow: 0 0 8px rgba(128, 0, 32, 0.15);
+}
+
+/* Text Area */
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Error Messages */
+small {
+    display: block;
+    color: #b22222;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 17px;
+    background: linear-gradient(
+        90deg,
+        #850027,
+        #650018
+    );
+    color: #fffaf0;
+    border: none;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4f0015;
+    transform: translateY(-2px);
+}
+
+/* Success Message */
+#successMessage {
+    color: #287344;
+    text-align: center;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
